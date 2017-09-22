@@ -63,6 +63,11 @@ public class CardDeck {
 		cardsUsed++;
 		return deck[cardsUsed - 1];
 	}
+	
+	public void countValuesUsed() {
+		
+	}
+	
 
 	public void printDeck() {
 		// prints 4 cards at a time

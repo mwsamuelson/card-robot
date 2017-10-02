@@ -72,8 +72,20 @@ public class Card {
 			return "??";
 		}
 	}
+	public int compareCard(Card thatCard) {
+	
+		if (this.value > thatCard.getValue()) {
+			return 3;
+		}
+		else if(this.value < thatCard.getValue()) {
+			return 2;
+		}
+		else {
+			return 420;
+		}
+	}
 
-	public String toString() {
+	public String printCard() {
 		//overrides toString method to print out card value and card suit
 		return getValueAsString() + " " + getSuitAsString();
 	}

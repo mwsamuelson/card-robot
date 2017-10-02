@@ -4,7 +4,7 @@
  *
  */
 public class CardDeck {
-	private Card[] deck;
+	public Card[] deck;
 	private int cardsUsed;
 
 	public CardDeck() {
@@ -63,21 +63,17 @@ public class CardDeck {
 		cardsUsed++;
 		return deck[cardsUsed - 1];
 	}
-	
-	public void countValuesUsed() {
 		
-	}
-	
 
 	public void printDeck() {
 		// prints 4 cards at a time
 		int rowCount = 0;
 		for (int i = 0; i < deck.length; i++) {
 			if (rowCount < 3) {
-				System.out.print(this.deck[i].toString() + ", ");
+				System.out.print(this.deck[i].printCard() + ", ");
 				rowCount++;
 			} else {
-				System.out.print(this.deck[i].toString());
+				System.out.print(this.deck[i].printCard());
 				System.out.println();
 				rowCount = 0;
 			}

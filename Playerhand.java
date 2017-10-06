@@ -7,7 +7,7 @@ public class Playerhand {
 		this.firstCard = this.lastCard = null;
 	}
 
-	public void addCardtoHand(Card card) { // enqueue
+	public void addCardtoHand(Card card) { 
 		Node tempCard = new Node(card); // temp node
 
 		if (this.lastCard == null) { //if playerHand is empty, the first card is the last card
@@ -19,7 +19,7 @@ public class Playerhand {
 		this.lastCard = tempCard;
 	}
 
-	public Node playCard() { // dequeue
+	public Node playCard() { 
 		//if hand is empty, return null
 		if (this.firstCard == null)
 			return null;

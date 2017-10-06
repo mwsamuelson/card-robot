@@ -81,7 +81,7 @@ public class Card {
 			return 2;
 		}
 		else {
-			return 420;
+			return 1;
 		}
 	}
 
